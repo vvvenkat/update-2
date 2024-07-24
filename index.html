@@ -16,7 +16,7 @@
                     alert("Function triggered successfully.\nResponse: " + text);
                 } else {
                     const text = await response.text();
-                    alert("ignore the error, running the code, wait for 10 minutes" + text);
+                    alert("Failed to trigger function. Status code: " + response.status + "\nResponse: " + text);
                 }
             } catch (error) {
                 alert("Error: " + error.message);
